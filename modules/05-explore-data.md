@@ -27,24 +27,24 @@ For this exercise, we recommend using a _Standard_DS11_v2_ compute instance. You
 
 ![Standard DS11 v2](../images/05/standard_ds11_v2-compute.png)
 
-Compute name: Enter a unique name
-Virtual Machine type: **CPU**
-Virtual Machine size: Choose Select from recommended options
-Search for and select **Standard_DS11_v2**
+> Compute name: Enter a unique name
+> Virtual Machine type: **CPU**
+> Virtual Machine size: Choose Select from recommended options
+> Search for and select **Standard_DS11_v2**
 
 **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
 
-Location: Select the same as your workspace. If that location is not listed, choose the one closest to you
-Virtual Machine priority: Dedicated
-Virtual Machine type: CPU
-Virtual Machine size: 
-Choose Select from recommended options
-Search for and select **Standard_DS11_v2**
-Compute name: Enter a unique name
-Minimum number of nodes: 0
-Maximum number of nodes: 1
-Idle seconds before scale down: 120
-Enable SSH access: Unselected
+> Location: Select the same as your workspace. If that location is not listed, choose the one closest to you
+> Virtual Machine priority: Dedicated
+> Virtual Machine type: CPU
+> Virtual Machine size: 
+> Choose Select from recommended options
+> Search for and select **Standard_DS11_v2**
+> Compute name: Enter a unique name
+> Minimum number of nodes: 0
+> Maximum number of nodes: 1
+> Idle seconds before scale down: 120
+> Enable SSH access: Unselected
 
 ### Exercise Overview
 
@@ -71,14 +71,14 @@ Let's explore techniques to identify and handle missing data within the dataset,
 **Create data asset**
 ![Data Assets](../images/05/data-assets.png)
 
-Name: Titanic
-Description: Passenger data on the Titanic
-Type: Tabular
-Choose a source for your data asset: From web files
-Web URL: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
-Skip data validation: Not selected
-Settings: Unchanged
-Schema: Unchanged
+> Name: Titanic
+> Description: Passenger data on the Titanic
+> Type: Tabular
+> Choose a source for your data asset: From web files
+> Web URL: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
+> Skip data validation: Not selected
+> Settings: Unchanged
+> Schema: Unchanged
 
 ![Data Preview](../images/05/data-preview.png)
 
@@ -107,18 +107,18 @@ This being a missing data exercise implies they are missing data. I could tell y
 
 To run the pipeline, click the **Configure & Submit** button on the ribbon. 
 
-Basics:
-	Experiment name: Create new
-	New experiment name: Enter a unique name
-	Job display name: Unchanged
-	Job description: Unchanged
-	Job tags: Unchanged
-Inputs & Outputs: Unchanged
-Runtime settings:
-	Select compute type: Compute cluster
-	Select Azure ML compute cluster: Previously created
-	Select datastore: Previously created
-	Continue on step failure: Selected
+> Basics:
+> -	Experiment name: Create new
+> -	New experiment name: Enter a unique name
+> -	Job display name: Unchanged
+> -	Job description: Unchanged
+> -	Job tags: Unchanged
+> Inputs & Outputs: Unchanged
+> Runtime settings:
+> -	Select compute type: Compute cluster
+> -	Select Azure ML compute cluster: Previously created
+> -	Select datastore: Previously created
+> -	Continue on step failure: Selected
 
 At the point, the pipeline will execute. It will take sometime, perhaps, this is a good time for a quick break.
 
