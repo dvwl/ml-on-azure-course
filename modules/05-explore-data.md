@@ -10,12 +10,11 @@ Before starting this exercise, make sure you have the following prerequisites se
 
 1. **Azure Machine Learning Resource:** If you haven't already, navigate to [portal.azure.com](https://portal.azure.com) and create an Azure Machine Learning resource. This resource will serve as your workspace for managing machine learning experiments, datasets, and models.
 
-![Azure Machine Learning Resource](../images/05/azure-ml-resource.png)
+	![Azure Machine Learning Resource](../images/05/azure-ml-resource.png)
 
 1. **Access Azure Machine Learning Studio:** Once your Azure Machine Learning resource is set up, navigate to [ml.azure.com](https://ml.azure.com) to access Azure Machine Learning Studio. Here, you'll be able to perform various machine learning tasks using the visual interface provided by Azure Machine Learning Designer.
 
-![Azure Machine Learning Studio](../images/05/ml-sudio-menu.png)
-
+	![Azure Machine Learning Studio](../images/05/ml-sudio-menu.png)
 
 1. **Compute Target Setup:** Set up a compute target for your Azure Machine Learning workspace. 
 
