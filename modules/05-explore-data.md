@@ -8,15 +8,15 @@ Before starting this exercise, make sure you have the following prerequisites se
 
 ### Prerequisites
 
-1. **Azure Machine Learning Resource:** If you haven't already, navigate to [portal.azure.com](https://portal.azure.com) and create an Azure Machine Learning resource. This resource will serve as your workspace for managing machine learning experiments, datasets, and models.
+- **Azure Machine Learning Resource:** If you haven't already, navigate to [portal.azure.com](https://portal.azure.com) and create an Azure Machine Learning resource. This resource will serve as your workspace for managing machine learning experiments, datasets, and models.
 
-	![Azure Machine Learning Resource](../images/05/azure-ml-resource.png)
+![Azure Machine Learning Resource](../images/05/azure-ml-resource.png)
 
-1. **Access Azure Machine Learning Studio:** Once your Azure Machine Learning resource is set up, navigate to [ml.azure.com](https://ml.azure.com) to access Azure Machine Learning Studio. Here, you'll be able to perform various machine learning tasks using the visual interface provided by Azure Machine Learning Designer.
+- **Access Azure Machine Learning Studio:** Once your Azure Machine Learning resource is set up, navigate to [ml.azure.com](https://ml.azure.com) to access Azure Machine Learning Studio. Here, you'll be able to perform various machine learning tasks using the visual interface provided by Azure Machine Learning Designer.
 
-	![Azure Machine Learning Studio](../images/05/ml-sudio-menu.png)
+![Azure Machine Learning Studio](../images/05/ml-sudio-menu.png)
 
-1. **Compute Target Setup:** Set up a compute target for your Azure Machine Learning workspace. 
+- **Compute Target Setup:** Set up a compute target for your Azure Machine Learning workspace. 
 
 **Compute Instances**: Development workstations that data scientists can use to work with data and models.
 
@@ -49,7 +49,7 @@ For this exercise, we recommend using a _Standard_DS11_v2_ compute instance. You
 
 In this exercise, you'll dive into the Azure Machine Learning Designer feature to explore and preprocess data for machine learning tasks. Using the Titanic dataset, sourced from [here](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv), you'll perform the following tasks:
 
-1. **Handling Missing Data:** Explore techniques to identify and handle missing data within the dataset, ensuring robustness and reliability in subsequent analyses.
+- **Handling Missing Data:** Explore techniques to identify and handle missing data within the dataset, ensuring robustness and reliability in subsequent analyses.
 
 ### Leveraging Azure Machine Learning Designer
 
@@ -65,9 +65,9 @@ Azure Machine Learning Designer offers an intuitive visual interface for buildin
 
 Let's explore techniques to identify and handle missing data within the dataset, ensuring robustness and reliability in subsequent analyses.
 
-1. Load the Titanic dataset into Azure Machine Learning Studio.
+- Load the Titanic dataset into Azure Machine Learning Studio.
 
-	![Data Assets](../images/05/data-assets.png)
+![Data Assets](../images/05/data-assets.png)
 
 - Name: Titanic
 - Description: Passenger data on the Titanic
@@ -78,19 +78,19 @@ Let's explore techniques to identify and handle missing data within the dataset,
 - Settings: Unchanged
 - Schema: Unchanged
 
-	![Data Preview](../images/05/data-preview.png)
+![Data Preview](../images/05/data-preview.png)
 
-1. Use visualizations and summary statistics to identify missing data points by **creating a new pipeline using classic prebuilt components** in the **Designer** tab.
+- Use visualizations and summary statistics to identify missing data points by **creating a new pipeline using classic prebuilt components** in the **Designer** tab.
 
-	![New Pipeline](../images/05/new-pipeline.png)
+![New Pipeline](../images/05/new-pipeline.png)
 
 If all is well, you'll see the data asset that you just created in the Designer under the Data tab.
 
-	![Data Asset](../images/05/data-assets-designer.png)
+![Data Asset](../images/05/data-assets-designer.png)
 
 Drag the data asset into the Pipeline Interface. From there, you can right click and select preview data as well.
 
-	![Missing Data Preview](../images/05/missing-data-preview.png)
+![Missing Data Preview](../images/05/missing-data-preview.png)
 
 You typically apply data transformations to prepare the data for modeling. 
 In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
@@ -99,7 +99,7 @@ Drag a **Select Columns in Dataset** module to the canvas, below the **Titanic**
 
 Select the **Select Columns in Dataset** module, and in its **Settings** pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the + links to add all columns.
 
-	![Select Columns in Dataset Settings](../images/05/select-column-in-dataset-settings.png)
+![Select Columns in Dataset Settings](../images/05/select-column-in-dataset-settings.png)
 
 This being a missing data exercise implies they are missing data. I could tell you (or you could just scroll down to find out), however, let's run the pipeline and see the missing data for yourselves.
 
@@ -120,13 +120,13 @@ Runtime settings:
 
 At the point, the pipeline will execute. It will take sometime, perhaps, this is a good time for a quick break.
 
-	![Missing Age Data](../images/05/missing-age-data.png)
+![Missing Age Data](../images/05/missing-age-data.png)
 
 It looks like we don't know the age of 177 passengers, and we don't know if two passengers even embarked.
 
 Cabin information for a whopping 687 persons is also missing.
 
-1. Apply appropriate techniques such as imputation or deletion to handle missing data.
+**Apply appropriate techniques such as imputation or deletion to handle missing data.**
 
 There a few ways to handle missing data such assigning the missing data as zero, deleting rows with missing data, replacing empty values with the mean or median for that data, and assigning 
 
@@ -136,9 +136,9 @@ Some datasets may have missing values that appear as zero. While the Titanic dat
 
 For a model that cannot handle missing data, the most prudent thing to do is to remove rows that have information missing.
 
-Let's remove some data from the `Embarked` column, which only has two rows with missing data using the **Clearn Missing Data** module.
+Let's remove some data from the `Embarked` column, which only has two rows with missing data using the **Clean Missing Data** module.
 
-	![Remove Missing Embarked](../images/05/remove-missing-embarked.png)
+![Remove Missing Embarked](../images/05/remove-missing-embarked.png)
 
 **Option 2: Replace empty values with the mean or median for that data**
 
@@ -146,7 +146,7 @@ Sometimes, our model cannot handle missing values, and we also cannot afford to 
 
 Here, we impute data for the `Age` field. We use the mean `Age` from the remaining rows, given that >80% of these have values.
 
-	![Replace with mean Age](../images/05/replace-with-mean.png)
+![Replace with mean Age](../images/05/replace-with-mean.png)
 
 The `Age` field has no longer has empty cells.
 
@@ -156,15 +156,15 @@ The `Cabin` field is a categorical field, because the Titanic cabins have a fini
 
 For this exercise, it makes perfect sense to create an `Unknown` category, and assign it to the cases where the cabin is unknown.
 
-	![Assign cabin with unknown](../images/05/assign-cabin-with-unknown.png)
+![Assign cabin with unknown](../images/05/assign-cabin-with-unknown.png)
 
 Run the pipeline as an experiment again.
 
-	![Running the pipeline](../images/05/running-pipeline.png)
+![Running the pipeline](../images/05/running-pipeline.png)
 
 That's it! No more missing data!
 
-	![Cleaned dataset](../images/05/cleaned-dataset.png)
+![Cleaned dataset](../images/05/cleaned-dataset.png)
 
 We only lost two records (where `Embarked` was empty).
 
