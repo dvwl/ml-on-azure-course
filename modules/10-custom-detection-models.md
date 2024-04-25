@@ -16,8 +16,8 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 
 1. On the Basics tab, enter the following values for each setting.
 - Project details:- 
-  - Subscription: &ltYour Subscription&gt
-  - Resource group: &ltCreate New&gt OR &ltSelect an Existing Resource Group&gt
+  - Subscription: *Your Subscription*
+  - Resource group: *Create New* OR *Select an Existing Resource Group*
 - Instance details:-
   - Storage account name: Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. Take note of the Storage Account Name as this value will be needed later on when we create a Datastore in Azure Machine Learning Studio.
   - Region: Select a location near to you from the dropdown list.
@@ -41,8 +41,8 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 - Azure Files:-
   - Enable large file shares: Uncheck. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent.
 
-> Warning
-> If Enable large file shares is selected, it will enforce additional restrictions, and Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
+  > Warning
+  > If Enable large file shares is selected, it will enforce additional restrictions, and Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
 1. Select **Next : Networking**. On the Networking tab, enter the following values for each setting.
 - Network connectivity:- 
@@ -72,7 +72,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 
 1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about your new storage account.
 
-![Storage Overview](../images/10/3-storage-overview.png)
+  ![Storage Overview](../images/10/3-storage-overview.png)
 
 Take note of the Storage Account Name as this value will be needed later on when we create a Datastore in Azure Machine Learning Studio.
 
@@ -84,35 +84,35 @@ Now that we have an Azure Storage Account, we'll create a container that will al
 
 1. In the left menu, scroll to the Data Storage section, then select Containers.
 
-![Containers Section](../images/10/4-containers-section.png)
+  ![Containers Section](../images/10/4-containers-section.png)
 
 1. Select the + Container+ Button, you'll be prompted to provide a name for your container. You'll want to keep track of this name is a secure and accessible document as it will be referenced later in the module. The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character.
 
-Set the level of public access to the container. The default level is Private (no anonymous access).
+  Set the level of public access to the container. The default level is Private (no anonymous access).
 
-Select Create to create the container:
+  Select Create to create the container:
 
-![Create Container](../images/10/4-create-container.png)
+  ![Create Container](../images/10/4-create-container.png)
 
 1. Once the container is created, select Access Keys under the Security + networking section of the left-side panel.
 
-![Access Keys Section](../images/10/4-access-keys-section.png)
+  ![Access Keys Section](../images/10/4-access-keys-section.png)
 
 1. This will bring up the following screen. Select the Show keys icon and copy the key to the clipboard and then record it somewhere safe and accessible. This key will be needed later.
 
-![Show Keys](../images/10/4-show-keys.png)
+  ![Show Keys](../images/10/4-show-keys.png)
 
 1. Select the Containers section on the left-side panel and select the newly created container as highlighted below:
 
-![Container Select](../images/10/4-container-select.png)
+  ![Container Select](../images/10/4-container-select.png)
 
 1. Download and extract the following provided image data. You'll need to decompress the included [soda_data_compressed.zip](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip) file, then follow the steps in the image below to upload the contents of the _soda_data\train_img_ directory as shown. Once you have selected these files for inclusion, select the now highlighted Upload button to begin the transfer from your machine to the Azure Storage Container.
 
-![Upload Image Data](../images/10/4-upload-image-data.png)
+  ![Upload Image Data](../images/10/4-upload-image-data.png)
 
 1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg). *Note that at a minimum you'll need at least 10 images to train an AutoML for Images model in Azure Machine Learning studio*
 
-![Uploaded Image Data](../images/10/4-uploaded-image-data.png)
+  ![Uploaded Image Data](../images/10/4-uploaded-image-data.png)
 
 1. At this point, you should have noted the Storage Account Name, Blob Container Name, and Access Key. These values will be used in the next section when we create the Azure Machine Learning Workspace.
 
