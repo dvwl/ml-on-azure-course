@@ -60,6 +60,28 @@ A common task when developing a custom object detection model is the need to pro
 
 1. You can optionally use **ML assisted labeling** which will accelerate your data labeling process, particularly as more data is captured. For this Learning Module, we won’t be using this option. Disable the option as shown then select **Create project**.
 
-    ![Ml Assisted Labeling](../images/11/2-ml-assisted-labeling.png)
+    ![ML Assisted Labeling](../images/11/2-ml-assisted-labeling.png)
 
 ### Label images with Azure Machine Learning data labeling tools
+We're now ready to begin working with our newly created Azure Machine Learning Data Labeling project. To prepare our images for training an object detection model, we'll need to label our image data appropriately. This task will involve drawing a bounding box around the objects of interest in our dataset, which will be stored as metadata. This metadata will then be referenced during training to allow us to gauge the accuracy of our model as it is trained over time. The accuracy of our model is verified by referencing our labeled image data to determine that detected objects are being identified within the regions we've defined.
+
+#### Label images with Azure Machine Learning data labeling tools
+1. Navigate to your Azure Machine Learning Data Labeling project by locating the **Manage** section on the left-hand pane and select **Data Labeling**, then select your newly created project.
+
+    ![Select Data Labeling Project](../images/11/3-select-data-labeling-project.png)
+
+1. On the resulting screen, select the **Label data** button.
+
+    ![Select Label Data](../images/11/3-select-label-data.png)
+
+1. The previous step will open a labeling utility, which will allow you to draw bounding boxes and tag objects/defects present in your images. There are multiple keyboard shortcuts available, which can be reviewed under the **Shortcut Keys** panel. As you label images, select the **Submit** button to save the labeled image. Repeat this process to label a minimum of 10 images (10 is the minimum amount of labeled samples required by aAzure Machine Learning Studio to successfully train an object detection model in an experiment task).
+
+    ![Label Images](../images/11/3-label-images.png)
+
+Export a labeled Azure Machine Learning dataset
+Completed
+100 XP
+5 minutes
+We'll now export our labeled dataset. This task will produce a json file stored in an Azure Blog Storage container assigned to our Azure Machine Learning studio instance. The file contains url references to the raw image data and the label metadata for each image. We'll reference this dataset later to use in model training through a Jupyter Notebook instance.
+
+### Export a labeled Azure Machine Learning dataset
