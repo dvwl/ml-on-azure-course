@@ -16,8 +16,8 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 
 1. On the Basics tab, enter the following values for each setting.
 - Project details:- 
-  - Subscription: `<Your Subscription>`
-  - Resource group: `<Create New>` OR `<Select an Existing Resource Group>`
+  - Subscription: &ltYour Subscription&gt
+  - Resource group: &ltCreate New&gt OR &ltSelect an Existing Resource Group&gt
 - Instance details:-
   - Storage account name: Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. Take note of the Storage Account Name as this value will be needed later on when we create a Datastore in Azure Machine Learning Studio.
   - Region: Select a location near to you from the dropdown list.
@@ -53,7 +53,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 1. Select **Next : Data protection**. On the Data protection tab, enter the following values for each setting.
 - Recovery:-
   - Enable point-in-time restore for containers: Uncheck. Not necessary for this implementation.
-  - Enable soft delete for blobs: Check. Soft delete lets you recover blob data in cases where blobs or blob snapshots are deleted accidentally or overwritten. |
+  - Enable soft delete for blobs: Check. Soft delete lets you recover blob data in cases where blobs or blob snapshots are deleted accidentally or overwritten.
   - Enable soft delete for containers: Check. Soft delete lets you recover your containers that are deleted accidentally.
   - Enable soft delete for file shares: Check. File share soft delete lets you recover your blob data more easily at the folder level.
 - Tracking:- 
