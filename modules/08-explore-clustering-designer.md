@@ -4,8 +4,6 @@ lab:
 ---
 ## Module 8: Explore Clustering with Azure Machine Learning Designer
 
-## Module 8: Training a Clustering Model in Azure Machine Learning
-
 In this exercise, you will explore the fascinating world of clustering using Azure Machine Learning. Specifically, you will train a clustering model to classify various penguin species based on their physical characteristics.
 
 ### Explore Clustering Modeling Module
