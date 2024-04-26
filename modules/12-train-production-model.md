@@ -2,7 +2,7 @@
 lab:
     title: 'Train Production Model'
 ---
-## Module 11: Use AutoML to train a labeled dataset and develop a production model
+## Module 12: Use AutoML to train a labeled dataset and develop a production model
 
 ### Prepare the Jupyter notebook workspace
 The Azure Machine Learning compute instance is a secure, cloud-based Azure workstation that provides data scientists with a Jupyter Notebook server, JupyterLab, and a fully managed machine learning environment. Previously we deployed a compute instance that we'll now use to execute a special notebook. This notebook will allow us to train our object detection model using AutoML. In this unit, we'll prepare the Jupyter notebook workspace with prerequisites that will allow us to run the notebook successfully.
