@@ -145,13 +145,13 @@ In this section, we'll access our virtual machine remotely to update the current
 
 	Now we can install Moby:
 
-	'''
+	```
 	sudo apt update
 
 	sudo apt install -y moby-engine
 
 	sudo apt update
-	'''
+	```
 
 1. Now, we’re ready to pull the container for the Triton Server from the NVIDIA NGC repository. You can also pull the container during the 'docker run' command when we get to that step, but for simplicity, we'll do the pull now. In the terminal emulator, run:
 
@@ -197,7 +197,7 @@ If the model detects the objects it was trained on, the Python script will creat
 	sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -p8000:8000 -p8002:8002 -v/home/<your username>/demo/model-repo:/models nvcr.io/nvidia/tritonserver:20.11-py3 tritonserver --model-repository=/models
 	```
 
-1. In the second window, copy the following command, changing <your username> to your value, and set the <probability threshold> to your desired confidence level between 0 and 1 (by default, this value is set to 0.6)
+1. In the second window, copy the following command, changing /<your username/> to your value, and set the /<probability threshold/> to your desired confidence level between 0 and 1 (by default, this value is set to 0.6)
 
 	```
 	python3 demo/app/frame_grabber.py -u <your username> -p .07
