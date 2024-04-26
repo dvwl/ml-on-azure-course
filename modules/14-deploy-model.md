@@ -90,7 +90,7 @@ In this section, we'll access our virtual machine remotely to update the current
 
 1. This will prompt you for the password you saved previously to your text editor. Copy this value, and right click in the command line to paste. If logging in for the first time, you’ll see the following message:
 
-    ![Deployment Overview](../images/14/2-vm-overview.png)
+    ![VM Logged In](../images/14/3-vm-logged-in.png)
 
 1. Now we’re going to load in a few packages that our Python script will need to execute properly. On the command line, enter:
 
@@ -161,7 +161,7 @@ In this section, we'll access our virtual machine remotely to update the current
 
 	This process will take some time to download the container layers and extract them.
 
-	![Deployment Overview](../images/14/2-vm-overview.png)
+	![Docker Pull](../images/14/3-docker-pull.png)
 
 1. Now we’re ready to copy the 'demo' directory over to the virtual machine. Download the [demo.zip](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/demo.zip) file from the repository, then unzip this file locally on your PC. Open a command prompt window, either in the utility, or open another window in Windows Terminal. Depending on where you unzipped the files, run the following command in the CLI:
 
@@ -169,7 +169,7 @@ In this section, we'll access our virtual machine remotely to update the current
 	scp -r <path to unzipped>/demo <your username>@<x.x.x.x vm IP address>:/home/<your username>/
 	```
 
-	![Deployment Overview](../images/14/2-vm-overview.png)
+	![Upload Demo](../images/14/3-upload-demo.png)
 
 1. Once we have these files copied over to the virtual machine, let’s switch back over to the terminal window connected to the virtual machine and set the permissions for this directory. In the CLI, enter:
 
