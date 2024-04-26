@@ -30,13 +30,13 @@ The Azure Machine Learning compute instance is a secure, cloud-based Azure works
 
 1. We'll now upload the prerequisite files and create a folder location in our workspace:
 
-    a. Select the **Upload** button (top right) and upload the *config.json* file that was obtained in previous steps (this file isn't included in the .zip file, this file was obtained earlier in the Azure portal and is unique to your account).
+    1. Select the **Upload** button (top right) and upload the *config.json* file that was obtained in previous steps (this file isn't included in the .zip file, this file was obtained earlier in the Azure portal and is unique to your account).
 
-    b. Select the *Upload* button (top right) and upload the *test_image1.jpg* file.
+    1. Select the *Upload* button (top right) and upload the *test_image1.jpg* file.
 
-    c. Select the *Upload* button (top right) and upload the *yolo_onnx_preprocessing_utils.py* python script.
+    1. Select the *Upload* button (top right) and upload the *yolo_onnx_preprocessing_utils.py* python script.
 
-    d. Select the Upload button (top right) and upload the AutoMLImage_ObjectDetection.ipynb Jupyter notebook.
+    1. Select the Upload button (top right) and upload the AutoMLImage_ObjectDetection.ipynb Jupyter notebook.
 
     The final view of the workspace should look like the following:
 
