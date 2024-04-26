@@ -197,7 +197,7 @@ If the model detects the objects it was trained on, the Python script will creat
 	sudo docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm -p8000:8000 -p8002:8002 -v/home/<your username>/demo/model-repo:/models nvcr.io/nvidia/tritonserver:20.11-py3 tritonserver --model-repository=/models
 	```
 
-1. In the second window, copy the following command, changing /<your username/> to your value, and set the /<probability threshold/> to your desired confidence level between 0 and 1 (by default, this value is set to 0.6)
+1. In the second window, copy the following command, changing \<your username\> to your value, and set the \<probability threshold\> to your desired confidence level between 0 and 1 (by default, this value is set to 0.6)
 
 	```
 	python3 demo/app/frame_grabber.py -u <your username> -p .07
