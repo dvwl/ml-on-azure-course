@@ -41,3 +41,40 @@ The Azure Machine Learning compute instance is a secure, cloud-based Azure works
     The final view of the workspace should look like the following:
 
     ![Jupyter Workspace](../images/12/2-jupyter-workspace.png)
+
+### Configure the Jupyter notebook execution environment
+In this section, we'll work with the Jupyter notebook that was uploaded to our Jupyter workspace. We'll execute commands that will install dependencies to ensure that our environment can run later referenced AutoML tasks. This process will involve upgrading the [azureml Python SDK](https://pypi.org/project/azureml-sdk/) and installing the [torchvision](https://pypi.org/project/torchvision/) Python package.
+
+#### Configure the Jupyter notebook execution environment
+1. Navigate to your Jupyter workspace and select the *AutoMLImage_ObjectDetection.ipynb* file to open the Jupyter notebook.
+
+    ![Open Notebook](../images/12/3-open-notebook.png)
+
+1. If you receive a **Kernel not found** prompt, select **Python 3.8 - AzureML** from the dropdown as shown then select Set Kernel.
+
+    ![Set Kernel](../images/12/3-set-kernel.png)
+
+1. Execute the cells in the **Environment Setup** section. This can be done by selecting the cell, then pressing Shift+Enter on the keyboard. Repeat this process for each cell and stop after running `pip install torchvision==0.9.1`.
+
+    ![Environment Setup](../images/12/3-environment-setup.png)
+
+1. After you've successfully executed the **pip install torchvision==0.9.1** task, you'll need to restart the Kernel. To restart the kernel, select the **Kernel** menu item and choose **Restart** from the dropdown.
+
+    ![Restart Kernel](../images/12/3-restart-kernel.png)
+
+1. Execute the **pip freeze* cell, which will list all installed python libraries, then execute the cell underneath it to import the libraries that will be used in further steps.
+
+1. Continue to execute the cells in the **Workspace setup** section. This step will read in the config.json file that was uploaded earlier and allow us to execute tasks against your Azure Machine Learning workspace.
+
+1. Continue to execute the cells in the **Compute target setup** section. You'll want to change the value of **compute_name** to match the name of the compute instance that exists in your Azure Machine Learning studio workspace. Otherwise, this script may either fail to create the instance (if an instance of the same name already exists in the same region) or it will create a second instance (the subsequent steps will still work but it will not use the existing resource).
+
+    ![Compute Target Setup](../images/12/3-compute-target-setup.png)
+
+1. Continue to execute the cells in the **Experiment Setup** section. This will create an Azure machine learning experiment that will allow us to track the status of the model during training.
+
+1. Continue to execute the cells in the **Dataset with input Training Data** section. Please note that you'll need to replace the name variable with the name of the Dataset that was exported at the end of the previous module. This value can be obtained in your Azure Machine Learning studio instance in the left-hand pane, locate the Assets section and select **Datasets**. You can validate that the Dataset was imported properly by viewing the output in the **training_dataset.to_pandas_dataframe()** cell.
+
+    ![Dataset Name](../images/12/3-dataset-name.png)
+
+    ![Dataset Training Data](../images/12/3-dataset-training-data.png)
+
