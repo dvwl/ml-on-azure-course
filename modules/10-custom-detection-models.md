@@ -41,7 +41,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 - Azure Files:-
   - Enable large file shares: Uncheck. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent.
 
-    > Warning
+    > [!WARNING]
     > If Enable large file shares is selected, it will enforce additional restrictions, and Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
 1. Select **Next : Networking**. On the Networking tab, enter the following values for each setting.

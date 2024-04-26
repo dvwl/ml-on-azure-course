@@ -9,7 +9,7 @@ The Microsoft Azure cloud offers many Virtual Machine sizes with various feature
 
 #### Create a GPU accelerated virtual machine
 
-> Note: 
+> [!NOTE] 
 > Depending on your Azure Subscription configuration, you may not have the capability to deploy a GPU accelerated Virtual Machine. If that is the case, you may still proceed with this module by deploying any CPU based Virtual Machine.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) and select the menu drop-down in the upper-left, then select **Create a resource**.
