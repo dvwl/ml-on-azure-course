@@ -3,6 +3,7 @@ lab:
     title: 'Evaluate Regression Models with Python'
 ---
 ## Module 18: Evaluate Regression Models with Python
+
 In this exercise, you’ll delve into the evaluation of regression models in machine learning using Python. Through practical exercises, you'll learn how to effectively train, evaluate, and optimize regression models using the Scikit-Learn framework.
 
 ### Exercise Overview
