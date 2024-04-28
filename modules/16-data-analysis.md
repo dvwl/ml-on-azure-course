@@ -21,7 +21,7 @@ To get started, access the following Jupyter notebooks:
 
 1. [NumPy and Pandas](../notebook/16/1-numpy-and-pandas.ipynb) - Learn the basics of NumPy and Pandas, fundamental packages for scientific computing in Python.
 2. [Visualizing Data with Matplotlib](../notebook/16/2-visualize-data.ipynb) - Explore data visualization techniques using Matplotlib, a versatile plotting library for Python.
-3. [Examine Real-world Data](../notebook/16/) - Explore real-world datasets and learn techniques to handle factors that weren't recorded, such as weather conditions, which may influence the data. Discover how increasing the size of the dataset can help mitigate these influences.
+3. [Examine Real-world Data](../notebook/16/3-real-world-data.ipynb) - Explore real-world datasets and learn techniques to handle factors that weren't recorded, such as weather conditions, which may influence the data. Discover how increasing the size of the dataset can help mitigate these influences.
 
 These notebooks will guide you through practical exercises where you'll apply Python packages to perform data analysis tasks, visualize data, and derive insights.
 
