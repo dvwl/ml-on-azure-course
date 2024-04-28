@@ -1,8 +1,8 @@
 ---
 lab:
-    title: 'Regression Model with Python'
+    title: 'Regression Models with Python'
 ---
-## Module 17: Create and Understand Regression Model with Python
+## Module 17: Create and Understand Regression Models with Python
 
 In this exercise, you’ll dive into the world of regression models in machine learning using Python. Through practical exercises, you'll gain insights into various regression techniques and their applications in predictive modeling.
 
