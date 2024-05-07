@@ -12,6 +12,9 @@ To begin your exploration of Azure AI Services, we recommend diving into the mod
 
 - **Azure AI Services:** [Getting Started with Azure AI Services](https://microsoftlearning.github.io/mslearn-ai-services/Instructions/Exercises/01-use-azure-ai-services.html)
 
+- Custom Vision AI: [Custom Vision Portal](https://www.customvision.ai/)
+Ignore the above for now.
+
 This module offers a hands-on experience in provisioning Azure AI resources and demonstrates how to interact with them from a client application using either C# or Python. While the focus is not on gaining expertise in any particular service, you'll gain valuable insights into the development workflow and best practices for integrating Azure AI Services into your projects.
 
 ### Next Steps
