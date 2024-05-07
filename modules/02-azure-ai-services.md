@@ -16,14 +16,14 @@ To begin your exploration of Azure AI Services, we recommend diving into the mod
 
 ~~This module offers a hands-on experience in provisioning Azure AI resources and demonstrates how to interact with them from a client application using either C# or Python. While the focus is not on gaining expertise in any particular service, you'll gain valuable insights into the development workflow and best practices for integrating Azure AI Services into your projects.~~
 
-In this module, we'll use the provision an Azure AI Service and connect that to Custom Vision Portal.
+In this module, we'll use the provision an **Azure AI Service** or **Azure Custom Vision Service** and connect that to [Custom Vision Portal](https://customvision.ai) at https://customvision.ai.
 
 We'll use the following parameters for this module:
-Name: insert your unique name
-Description: this is optional
-Resource: select your resource from earlier modules
-Project Types: Object Detection
-Domains: General (compact) \[S1\] or General \[A1\]
+- Name: insert your unique name
+- Description: this is optional
+- Resource: select your resource from earlier modules or create a new resource
+- Project Types: Object Detection
+- Domains: General (compact) \[S1\] or General \[A1\]
 
 NOTE: If you want to export the model to TensorFlow, CoreML, ONNX, you may experiment with General (compact).
 
