@@ -93,7 +93,7 @@ Drag the data asset into the Pipeline Interface. From there, you can right click
 ![Missing Data Preview](../images/05/missing-data-preview.png)
 
 You typically apply data transformations to prepare the data for modeling. 
-In the pane on the left, expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+In the pane on the left (not the menu where you see Authoring, Assets, Manage), first select **Component** and then expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 
 Drag a **Select Columns in Dataset** module to the canvas, below the **Titanic** module. Then connect the output at the bottom of the **Titanic** module to the input at the top of the Select Columns in Dataset module.
 
