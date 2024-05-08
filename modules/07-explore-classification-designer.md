@@ -12,6 +12,9 @@ To deepen your understanding of classification modeling and its application in A
 
 - **Classification with Azure Machine Learning Designer:** [Classification with Azure Machine Learning Designer](https://microsoftlearning.github.io/AI-900-AIFundamentals/instructions/02b-create-classification-model.html)
 
+NOTE: In the link above, the diabetic data is missing. I've copied from somewhere on GitHub. Please use this link instead.
+[Diabetic Data](https://raw.githubusercontent.com/dvwl/ml-on-azure-course/main/data/diabetic_data.csv)
+
 This module covers a variety of topics including the fundamentals of classification algorithms, techniques for data preprocessing, model training and evaluation, and deployment of classification models in Azure Machine Learning. By completing this module, you'll gain valuable insights into building and deploying classification models for real-world scenarios.
 
 ### Exercise Overview
